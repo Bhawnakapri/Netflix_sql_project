@@ -3,14 +3,17 @@
 ![](https://github.com/najirh/netflix_sql_project/blob/main/logo.png)
 
 ## Overview
-This project involves a comprehensive analysis of Netflix's movies and TV shows data using SQL. The goal is to extract valuable insights and answer various business questions based on the dataset. The following README provides a detailed account of the project's objectives, business problems, solutions, findings, and conclusions.
+This project involves exploratory data analysis of Netflix Movies and TV Shows using PostgreSQL. The objective is to solve real-world business questions and extract meaningful insights from structured entertainment data using advanced SQL techniques.The project demonstrates strong command over data querying, transformation, aggregation, and analytical problem-solving using SQL.
 
 ## Objectives
 
-- Analyze the distribution of content types (movies vs TV shows).
-- Identify the most common ratings for movies and TV shows.
-- List and analyze content based on release years, countries, and durations.
-- Explore and categorize content based on specific criteria and keywords.
+- Analyze the distribution of Movies vs TV Shows
+- Identify the most common content ratings by type 
+- Examine content trends across years and countries
+- Identify top-performing actors and directors
+- Analyze genre distribution
+- Categorize content based on keyword-based sentiment logic
+- Extract time-based insights using date operations
 
 ## Dataset
 
@@ -18,6 +21,12 @@ The data for this project is sourced from the Kaggle dataset:
 
 - **Dataset Link:** [Movies Dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download)
 
+## Tech Stack
+- PostgreSQL
+- pgAdmin 4
+- SQL
+- Visual Studio Code
+  
 ## Schema
 
 ```sql
