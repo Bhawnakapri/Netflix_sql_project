@@ -20,6 +20,8 @@ This project involves exploratory data analysis of Netflix Movies and TV Shows u
 The data for this project is sourced from the Kaggle dataset:
 
 - **Dataset Link:** [Movies Dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download)
+- Records: ~8,800+ titles
+- Attributes: 12 columns including content type, director, cast, country, rating, release year, duration, genre, and description.
 
 ## Tech Stack
 - PostgreSQL
@@ -265,14 +267,52 @@ GROUP BY category;
 
 **Objective:** Categorize content as 'Bad' if it contains 'kill' or 'violence' and 'Good' otherwise. Count the number of items in each category.
 
-## Findings and Conclusion
+## Key Analytical Problems Solved
 
-- **Content Distribution:** The dataset contains a diverse range of movies and TV shows with varying ratings and genres.
-- **Common Ratings:** Insights into the most common ratings provide an understanding of the content's target audience.
-- **Geographical Insights:** The top countries and the average content releases by India highlight regional content distribution.
-- **Content Categorization:** Categorizing content based on specific keywords helps in understanding the nature of content available on Netflix.
+- Counted total Movies vs TV Shows
+- Identified most frequent ratings using window functions
+- Extracted top 5 content-producing countries
+- Determined the longest movie using string parsing & casting
+- Analyzed content added in the last 5 years
+- Identified actors with highest appearances in Indian productions
+- Categorized content using conditional keyword logic
+- Calculated year-wise contribution percentage for Indian content
 
-This analysis provides a comprehensive view of Netflix's content and can help inform content strategy and decision-making.
+## SQL Concepts Demonstrated
 
+- Aggregate Functions (COUNT, ROUND)
+- Grouping & Sorting (GROUP BY, ORDER BY)
+- Window Functions (RANK() OVER)
+- Common Table Expressions (CTE)
+- String Functions (STRING_TO_ARRAY, UNNEST, SPLIT_PART)
+- Type Casting
+- Date Functions (TO_DATE, INTERVAL)
+- Conditional Logic (CASE WHEN)
+- Filtering (ILIKE, LIKE, WHERE)
+
+## Business Insights
+
+- Movies dominate the Netflix catalog compared to TV Shows.
+- A small set of ratings account for a majority of content.
+- The United States and India contribute significantly to the platform’s library.
+- Content growth accelerated in specific peak years.
+- Keyword-based classification helps identify potentially sensitive content.
+
+## Key Learning Outcomes
+
+- Applied SQL to solve structured business problems
+- Worked with semi-structured string fields (multiple countries, multiple actors)
+- Used analytical functions for ranking-based insights
+- Performed data transformation within PostgreSQL
+- Improved query optimization and logical structuring
+
+## Conclusion
+
+- This project showcases practical SQL skills applied to a real-world dataset. It reflects the ability to translate business questions into efficient database queries and extract actionable insights — a core requirement for Data Analyst roles.
+
+## Author
+
+- Shivani
+- B.Tech CSE – Data Science
 
 
