@@ -7,26 +7,27 @@ This project involves exploratory data analysis of Netflix Movies and TV Shows u
 The project demonstrates strong command over data querying, transformation, aggregation, and analytical problem-solving using SQL.
 
 # Business Objectives
-Analyze the distribution of Movies vs TV Shows
-Identify the most common content ratings by type
-Examine content trends across years and countries
-Identify top-performing actors and directors
-Analyze genre distribution
-Categorize content based on keyword-based sentiment logic
-Extract time-based insights using date operations
+-Analyze the distribution of Movies vs TV Shows
+-Identify the most common content ratings by type
+-Examine content trends across years and countries
+-Identify top-performing actors and directors
+-Analyze genre distribution
+-Categorize content based on keyword-based sentiment logic
+-Extract time-based insights using date operations
 
 # Tech Stack
-PostgreSQL
-pgAdmin 4
-SQL
-Visual Studio Code
+-PostgreSQL
+-pgAdmin 4
+-SQL
+-Visual Studio Code
 
 # Dataset
 Source:  [Movies Dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download)
-Records: ~8,800+ titles
-Attributes: 12 columns including content type, director, cast, country, rating, release year, duration, genre, and description.
+-Records: ~8,800+ titles
+-Attributes: 12 columns including content type, director, cast, country, rating, release year, duration, genre, and description.
 
 ## Schema
+
 '''sql
 DROP TABLE IF EXISTS netflix;
 CREATE TABLE netflix
@@ -48,14 +49,14 @@ CREATE TABLE netflix
 
 # Key Analytical Problems Solved
 
-✔ Counted total Movies vs TV Shows
-✔ Identified most frequent ratings using window functions
-✔ Extracted top 5 content-producing countries
-✔ Determined the longest movie using string parsing & casting
-✔ Analyzed content added in the last 5 years
-✔ Identified actors with highest appearances in Indian productions
-✔ Categorized content using conditional keyword logic
-✔ Calculated year-wise contribution percentage for Indian content
+-✔ Counted total Movies vs TV Shows
+-✔ Identified most frequent ratings using window functions
+-✔ Extracted top 5 content-producing countries
+-✔ Determined the longest movie using string parsing & casting
+-✔ Analyzed content added in the last 5 years
+-✔ Identified actors with highest appearances in Indian productions
+-✔ Categorized content using conditional keyword logic
+-✔ Calculated year-wise contribution percentage for Indian content
 
 # SQL Concepts Demonstrated
 Aggregate Functions (COUNT, ROUND)
